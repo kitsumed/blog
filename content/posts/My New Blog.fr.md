@@ -1,7 +1,7 @@
 ---
 title: 'Mon Nouveau Blog'
 date: '2025-05-23T20:20:12-04:00'
-tags: []
+tags: [blog-update]
 comments: true
 description: "Mon tout premier post de blog !"
 searchHidden: false

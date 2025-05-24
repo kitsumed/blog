@@ -1,0 +1,61 @@
+/*Customised style related to posts page */
+
+/* justify the text of the post content */
+.post-content p {
+    text-align: justify !important;
+    text-justify: inter-word !important;
+}
+
+/* css for the post comments section (layouts/partials/comments.html) */
+.comments summary {
+  background-color: #4654c0;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  width: 50%; /* Makes the summary 50% of the parent width */
+  margin: 0 auto 10px; /* Centers the summary */
+}
+.comments-notice {
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+}
+.comments-notice a {
+  color: #007bff;
+  text-decoration: none;
+}
+.comments-notice a:hover {
+  color: #419dff;
+  text-decoration: none;
+}
+.comments summary:hover {
+  background-color: #3c46b1;
+}
+.comments details[open] summary {
+  background-color: #3c46b1;
+}
+
+/* change color of the blockquote depending of alerts type (overwritten in layouts_default_markup) */
+.post-content blockquote.alert-note {
+  border-inline-start: 3px solid #0968e1 !important;
+}
+
+.post-content blockquote.alert-tip {
+  border-inline-start: 3px solid #10712b !important;
+}
+
+.post-content blockquote.alert-important {
+  border-inline-start: 3px solid #8350e1 !important;
+}
+
+.post-content blockquote.alert-warning {
+  border-inline-start: 3px solid #915f00 !important;
+}
+
+.post-content blockquote.alert-caution {
+  border-inline-start: 3px solid #c01724 !important;
+}

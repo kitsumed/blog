@@ -87,7 +87,8 @@ params:
   disableThemeToggle: false
   displayFullLangName: true
   # Custom CSS injected in the extend_head.html layout (in all pages header)
-  custom_css: ["/css/post-style.css"]
+  # (NOTE: Disabled as with the current theme (PaperMod), the layouts/partials/head.html element actually check the "assets/css/extended/" directory and append all of our custom css files inside, thus loading one single css file)
+  # custom_css: ["/css/post-style.css"]
 
   ShowReadingTime: true
   ShowShareButtons: false
@@ -132,8 +133,8 @@ params:
     hiddenInSingle: false # hide on single page
 
   editPost:
-    URL: "https://github.com/<path_to_repo>/content"
-    Text: "Suggest Changes" # edit text
+    URL: "https://github.com/kitsumed/blog/tree/main/content"
+    Text: "Edit Post" # edit text
     appendFilePath: true # to append file path to Edit link
 
   # for search

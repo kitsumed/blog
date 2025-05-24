@@ -1,7 +1,7 @@
 ---
 title: 'My New Blog'
 date: '2025-05-23T20:20:12-04:00'
-tags: []
+tags: [blog-update]
 comments: true
 description: "This is my first blog post!"
 searchHidden: false
