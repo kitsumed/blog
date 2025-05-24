@@ -1,0 +1,12 @@
+<!-- Load custom CSS-->
+
+{{- if not site.Params.assets.disableFingerprinting }}
+{{ range .Site.Params.custom_css -}}
+    {{- $customStylesheet := resources.Get . | resources.Minify | fingerprint}}
+    <link crossorigin="anonymous" href="{{ $customStylesheet.RelPermalink }}" integrity="{{ $customStylesheet.Data.Integrity }}" rel="preload stylesheet" as="style">
+{{- end }}
+
+{{- else }}
+    {{- $customStylesheet := resources.Get . | resources.Minify}}
+    <link crossorigin="anonymous" href="{{ $customStylesheet.RelPermalink }}" rel="preload stylesheet" as="style">
+{{- end }}

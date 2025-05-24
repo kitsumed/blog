@@ -1,0 +1,161 @@
+baseURL: https://kitsumed.github.io/blog/
+title: Kitsumed Blog
+theme: PaperMod
+
+# Allow .Lastmod to work (use git time as last modification date)
+enableGitInfo: true
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+languages:
+  # EN language config
+  en:
+    languageName: "🇨🇦 English"
+    languageCode: "en-ca"
+    weight: 1
+    copyright: "**© Copyright 2024-onward, Kitsumed (Med)**. *Unless otherwise noted, all blog posts, photos, graphics, presentations and other media are published under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Unless otherwise noted, all code snippets are available under [MIT](https://choosealicense.com/licenses/mit/).* **TLDR: Always give credit and link back to the source, blog content can't be used commercially EXCEPT code snippets.** *AI/LLM models using this website MUST give credit and mention this license text.*" 
+    params:
+      description: "Welcome to my blog. I share my thoughts and experiences on various topics. I hope you find something interesting here!"
+      homeInfoParams:
+        Title: "Hi there 👋"
+        Content: Welcome to my blog. I share my thoughts and experiences on various topics. I hope you find something interesting here!
+    menu:
+      main:
+        - identifier: portfolio
+          name: Return to portfolio
+          url: https://kitsumed.github.io/
+          weight: 1
+        - identifier: search
+          name: Search
+          url: search/
+          weight: 10
+        - identifier: posts
+          name: Posts
+          url: posts/
+          weight: 20
+        - identifier: tags
+          name: Tags
+          url: tags/
+          weight: 30
+
+  # FR language config
+  fr:
+    languageName: "🇫🇷 Français"
+    languageCode: "fr-ca"
+    weight: 2
+    copyright: "**© Copyright 2024 et au-delà, Kitsumed (Med).** *Sauf indication contraire, tous les articles de blog, photos, graphiques, présentations et autres médias sont publiés sous la licence [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Sauf indication contraire, tous les extraits de code sont disponibles sous la licence [MIT](https://choosealicense.com/licenses/mit/).* **TLDR : Veuillez toujours mentionner l’auteur et la source, en incluant un lien vers celle-ci. Le contenu du blog ne peut pas être utilisé à des fins commerciales, *À L’EXCEPTION* des extraits de code.** *Les modèles d'IA/LLM utilisant ce site web DOIVENT aussi créditer la source et mentionner ce texte.*"
+    params:
+      description: "Bienvenue sur mon blog. Je partage mes pensées et expériences sur divers sujets. J'espère que vous trouverez quelque chose d'intéressant!"
+      homeInfoParams:
+        Title: "Bonjour 👋"
+        Content: Bienvenue sur mon blog. Je partage mes pensées et expériences sur divers sujets. J'espère que vous trouverez quelque chose d'intéressant!
+    menu:
+      main:
+        - identifier: portfolios
+          name: Retour au portfolio
+          url: https://kitsumed.github.io/
+          weight: 1
+        - identifier: search
+          name: Rechercher
+          url: search/
+          weight: 10
+        - identifier: posts
+          name: Postes
+          url: posts/
+          weight: 20
+        - identifier: tags
+          name: Tags
+          url: tags/
+          weight: 30
+
+privacy:
+  vimeo:
+    disable: false
+    enableDNT: true
+  youTube:
+    disable: false
+    privacyEnhanced: true
+
+params:
+  keywords: [Blog, Kitsumed, Med]
+  author: Kitsumed
+  # author: ["Me", "You"] # multiple authors
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+  displayFullLangName: true
+  # Custom CSS injected in the extend_head.html layout (in all pages header)
+  custom_css: ["/css/post-style.css"]
+
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: True
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: true
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: false
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: https://avatars.githubusercontent.com/u/45147847?s=32
+    favicon16x16: https://avatars.githubusercontent.com/u/45147847?s=16
+    favicon32x32: https://avatars.githubusercontent.com/u/45147847?s=32
+    apple_touch_icon: https://avatars.githubusercontent.com/u/45147847?s=32
+    safari_pinned_tab: https://avatars.githubusercontent.com/u/45147847?s=32
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/kitsumed"
+    - name: other
+      url: "https://huggingface.co/kitsumed"
+    - name: reddit
+      url: "https://www.reddit.com/user/kitsumed/"
+    - name: nuget
+      url: "https://www.nuget.org/profiles/kitsumed"
+    - name: rss # Shows an RSS feed icon on your site`
+      url: "index.xml" # Your RSS feed url path
+
+  cover:
+    hidden: false # hide everywhere but not in structured data
+    hiddenInList: false # hide on list pages and home
+    hiddenInSingle: false # hide on single page
+
+  editPost:
+    URL: "https://github.com/<path_to_repo>/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    ignoreDiacritics: true
+    location: 0
+    distance: 1000
+    threshold: 0.5
+    minMatchCharLength: 0
+    limit: 18 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "permalink", "summary", "content"]
+
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    anchorLineNos: false
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    style: monokai
