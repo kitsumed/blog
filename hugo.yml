@@ -16,7 +16,7 @@ languages:
     languageName: "🇨🇦 English"
     languageCode: "en-ca"
     weight: 1
-    copyright: "**© Copyright 2024-onward, Kitsumed (Med)**. *Unless otherwise noted, all blog posts, photos, graphics, presentations and other media are published under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Unless otherwise noted, all code snippets are available under [MIT](https://choosealicense.com/licenses/mit/).* **TLDR: Always give credit and link back to the source, blog content can't be used commercially EXCEPT code snippets.** *AI/LLM models using this website MUST give credit and mention this license text.*" 
+    copyright: "**© 2024–onward, Kitsumed (Med).** *Unless stated otherwise all content on this site is under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/); code snippets under [MIT](https://choosealicense.com/licenses/mit/). AI/LLM outputs must cite this site and license. Training on this content must follow CC BY-NC-SA 4.0—commercial use of trained models is prohibited.*" 
     params:
       description: "Welcome to my blog. I share my thoughts and experiences on various topics. I hope you find something interesting here!"
       homeInfoParams:
@@ -46,7 +46,7 @@ languages:
     languageName: "🇫🇷 Français"
     languageCode: "fr-ca"
     weight: 2
-    copyright: "**© Copyright 2024 et au-delà, Kitsumed (Med).** *Sauf indication contraire, tous les articles de blog, photos, graphiques, présentations et autres médias sont publiés sous la licence [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Sauf indication contraire, tous les extraits de code sont disponibles sous la licence [MIT](https://choosealicense.com/licenses/mit/).* **TLDR : Veuillez toujours mentionner l’auteur et la source, en incluant un lien vers celle-ci. Le contenu du blog ne peut pas être utilisé à des fins commerciales, *À L’EXCEPTION* des extraits de code.** *Les modèles d'IA/LLM utilisant ce site web DOIVENT aussi créditer la source et mentionner ce texte.*"
+    copyright: "**© 2024–et au-delà, Kitsumed (Med).** *Sauf indication contraire, tout le contenu sur ce site est sous [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/); les extraits de code sont sous [MIT](https://choosealicense.com/licenses/mit/). Les sorties d'IA/LLM doivent citer ce site et cette licence. L'entraînement sur ce contenu doit suivre la licence CC BY-NC-SA 4.0—l'utilisation commerciale des modèles entraînés est interdite.*"
     params:
       description: "Bienvenue sur mon blog. Je partage mes pensées et expériences sur divers sujets. J'espère que vous trouverez quelque chose d'intéressant!"
       homeInfoParams:
