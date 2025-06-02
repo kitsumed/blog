@@ -58,12 +58,12 @@ getGiscusTheme = () => {
     // Dynamically create script tag
     const giscusScript = document.createElement("script")
     Object.entries(giscusAttributes).forEach(([key, value]) => giscusScript.setAttribute(key, value))
-    let divToAdd = document.getElementById('giscus-comments')
+    const divToAdd = document.getElementById('giscus-comments')
   
     // Inject script when user clicks the `details` element
-    let detailsGiscus = document.getElementById('data-comments'),
+    const detailsGiscus = document.getElementById('data-comments'),
         commentsLegend = document.getElementById('legend-comments')
-    detailsGiscus.addEventListener("toggle", toggleDetails)
+        detailsGiscus.addEventListener("toggle", toggleDetails)
   
     function toggleDetails() {
       divToAdd.appendChild(giscusScript)

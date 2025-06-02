@@ -1,12 +1,29 @@
-<!-- Load custom CSS -->
-
 {{- if not site.Params.assets.disableFingerprinting }}
-{{ range .Site.Params.custom_css -}}
-    {{- $customStylesheet := resources.Get . | resources.Minify | fingerprint}}
-    <link crossorigin="anonymous" href="{{ $customStylesheet.RelPermalink }}" integrity="{{ $customStylesheet.Data.Integrity }}" rel="preload stylesheet" as="style">
-{{- end }}
+
+  <!-- Load custom CSS with Fingerprinting -->
+  {{ range .Site.Params.custom_css -}}
+      {{- $customStylesheet := resources.Get . | resources.Minify}}
+      <link crossorigin="anonymous" href="{{ $customStylesheet.RelPermalink }}" integrity="{{ $customStylesheet.Data.Integrity }}" rel="preload stylesheet" as="style">
+  {{- end }}
+
+  <!-- Load Giscus (Comments) loader script -->
+  {{ if .Params.comments }}  <!-- Check if the 'comments' param is true -->
+    {{ $jsComments := resources.Get "js/comments-giscus.js" | resources.Minify | fingerprint -}}
+    <script src="{{ $jsComments.RelPermalink }}" integrity="{{ $jsComments.Data.Integrity }}" defer></script>
+  {{ end }}
 
 {{- else }}
-    {{- $customStylesheet := resources.Get . | resources.Minify}}
-    <link crossorigin="anonymous" href="{{ $customStylesheet.RelPermalink }}" rel="preload stylesheet" as="style">
+
+  <!-- Load custom CSS without Fingerprinting -->
+  {{ range .Site.Params.custom_css -}}
+      {{- $customStylesheet := resources.Get . | resources.Minify}}
+      <link crossorigin="anonymous" href="{{ $customStylesheet.RelPermalink }}" rel="preload stylesheet" as="style">
+  {{- end }}
+
+  <!-- Load Giscus (Comments) loader script -->
+  {{ if .Params.comments }}  <!-- Check if the 'comments' param is true -->
+    {{ $jsComments := resources.Get "js/comments-giscus.js" | resources.Minify -}}
+    <script src="{{ $jsComments.RelPermalink }}" defer></script>
+  {{ end }}
+
 {{- end }}
