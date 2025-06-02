@@ -16,7 +16,7 @@ languages:
     languageName: "🇨🇦 English"
     languageCode: "en-ca"
     weight: 1
-    copyright: "**© 2024–onward, Kitsumed (Med).** *Unless stated otherwise all content on this site is under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/); code snippets under [MIT](https://choosealicense.com/licenses/mit/). AI/LLM outputs must cite this site and license. Training on this content must follow CC BY-NC-SA 4.0—commercial use of trained models is prohibited.*" 
+    copyright: "**© 2024–onward, Kitsumed (Med).** *Unless stated otherwise all content on this blog is under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/); code snippets under [MIT](https://choosealicense.com/licenses/mit/). AI/LLM outputs must cite this site and license. Training on this content must follow CC BY-NC-SA 4.0—commercial use of trained models is prohibited.*" 
     params:
       description: "Welcome to my blog. I share my thoughts and experiences on various topics. I hope you find something interesting here!"
       homeInfoParams:
@@ -46,12 +46,12 @@ languages:
     languageName: "🇫🇷 Français"
     languageCode: "fr-ca"
     weight: 2
-    copyright: "**© 2024–et au-delà, Kitsumed (Med).** *Sauf indication contraire, tout le contenu sur ce site est sous [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/); les extraits de code sont sous [MIT](https://choosealicense.com/licenses/mit/). Les sorties d'IA/LLM doivent citer ce site et cette licence. L'entraînement sur ce contenu doit suivre la licence CC BY-NC-SA 4.0—l'utilisation commerciale des modèles entraînés est interdite.*"
+    copyright: "**© 2024–et au-delà, Kitsumed (Med).** *Sauf indication contraire, tout le contenu sur ce blogue est sous [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/); les extraits de code sont sous [MIT](https://choosealicense.com/licenses/mit/). Les sorties d'IA/LLM doivent citer ce site et cette licence. L'entraînement sur ce contenu doit suivre la licence CC BY-NC-SA 4.0—l'utilisation commerciale des modèles entraînés est interdite.*"
     params:
-      description: "Bienvenue sur mon blog. Je partage mes pensées et expériences sur divers sujets. J'espère que vous trouverez quelque chose d'intéressant!"
+      description: "Bienvenue sur mon blogue. Je partage mes pensées et expériences sur divers sujets. J'espère que vous trouverez quelque chose d'intéressant!"
       homeInfoParams:
         Title: "Bonjour 👋"
-        Content: Bienvenue sur mon blog. Je partage mes pensées et expériences sur divers sujets. J'espère que vous trouverez quelque chose d'intéressant!
+        Content: Bienvenue sur mon blogue. Je partage mes pensées et expériences sur divers sujets. J'espère que vous trouverez quelque chose d'intéressant!
     menu:
       main:
         - identifier: portfolios
@@ -97,8 +97,8 @@ params:
   ShowCodeCopyButtons: true
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
-  UseHugoToc: True
-  disableSpecial1stPost: false
+  UseHugoToc: false
+  disableSpecial1stPost: true
   disableScrollToTop: false
   comments: true
   hidemeta: false
@@ -107,7 +107,7 @@ params:
   tocopen: false
 
   assets:
-    # disableHLJS: true # to disable highlight.js
+    disableHLJS: true # to disable highlight.js, we use chroma insead
     # disableFingerprinting: true
     favicon: https://avatars.githubusercontent.com/u/45147847?s=32
     favicon16x16: https://avatars.githubusercontent.com/u/45147847?s=16

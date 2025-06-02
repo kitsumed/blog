@@ -17,5 +17,5 @@ At the root of the git repo there is :
 ## License:
 The project itself (**source code and configurations files for generating the static blog**) are licensed MIT as per the LICENSE file at ``ROOT/LICENSE``.
 
-The website actual content (``ROOT/content/*`` files), all assets (``ROOT/assets/*`` files) and everything accessible from the ``https://kitsumed.github.io/blog/`` path (baseUrl) on the static website are licensed under the following:
-* **© Copyright 2024-onward, Kitsumed (Med)**. *Unless otherwise noted, all blog posts, photos, graphics, presentations and other media are published under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Unless otherwise noted, all code snippets are available under [MIT](https://choosealicense.com/licenses/mit/).* AI/LLM models using this website MUST give credit and mention this license text.
+The website actual content (For example paths like ``ROOT/content/*`` and all files inside), all assets (Paths like ``ROOT/assets/*`` and all files inside) and everything accessible from the ``https://kitsumed.github.io/blog/`` path (baseUrl) or any other url using the "actual content" on the static website are licensed under the following:
+* **© 2024–onward, Kitsumed (Med)**. *Unless stated otherwise **all content on this blog is under CC BY-NC-SA 4.0**; **code snippets under MIT**. AI/LLM outputs must cite this site and license. Training on this content must follow CC BY-NC-SA 4.0—commercial use of trained models is prohibited.*
