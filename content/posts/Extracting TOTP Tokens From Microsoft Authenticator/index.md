@@ -154,6 +154,9 @@ You're almost there! Just a few steps...
     ```
     ![Phonefactor SQLite Viewer VS Code](phonefactor.webp)
 
+>[!TIP]
+> If you later want to uninstall Android Studio and/or fully remove the virtual device from your system, go to `C:\Users\%username%\.android\` and find the leftover files or remove everything if you uninstalled Android Studio. Upon looking, I also found leftover files after a supposed "full uninstallation" in other locations like `C:\Users\%username%\AppData\Roaming\Google\AndroidStudio2025.2.2`, `C:\Users\%username%\AppData\Local\Android`, `C:\Users\%username%\AppData\Local\Google\AndroidStudio2025.2.2`, and `C:\Users\%username%\AppData\Local\Temp\AndroidEmulator`. There was around 10GB of left-over files... Yep.
+
 ## Story Time - Why did the restore take 3 hours?
 
 Alright, so I installed the Authenticator, pressed restore, and connected my account. *Pretty straightforward...* **Right??**
