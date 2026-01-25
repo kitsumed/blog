@@ -12,6 +12,12 @@
     <script src="{{ $jsComments.RelPermalink }}" integrity="{{ $jsComments.Data.Integrity }}" defer></script>
   {{ end }}
 
+  <!-- Load Goatcounter (privacy-friendly analytics) loader script -->
+  {{ if .Site.Params.privacyFriendlyAnalytics.enabled }}  <!-- Check if the 'privacyFriendlyAnalytics.enabled' param is true -->
+    {{ $jsAnalytics := resources.Get "js/analytics.js" | resources.Minify | fingerprint -}}
+    <script data-goatcounter="{{ .Site.Params.privacyFriendlyAnalytics.id }}" async src="{{ $jsAnalytics.RelPermalink }}" integrity="{{ $jsAnalytics.Data.Integrity }}"></script>
+  {{ end }}
+
 {{- else }}
 
   <!-- Load custom CSS without Fingerprinting -->
@@ -26,4 +32,21 @@
     <script src="{{ $jsComments.RelPermalink }}" defer></script>
   {{ end }}
 
+    <!-- Load Goatcounter (privacy-friendly analytics) loader script -->
+    {{ if .Site.Params.privacyFriendlyAnalytics.enabled }}  <!-- Check if the 'privacyFriendlyAnalytics.enabled' param is true -->
+    {{ $jsAnalytics := resources.Get "js/analytics.js" | resources.Minify -}}
+    <script data-goatcounter="{{ .Site.Params.privacyFriendlyAnalytics.id }}" async src="{{ $jsAnalytics.RelPermalink }}"></script>
+  {{ end }}
+
 {{- end }}
+
+<!-- GeoCounter Privacy-Friendly Pixel-Tracking -->
+{{ if .Site.Params.privacyFriendlyAnalytics.enabled }}  <!-- Check if the 'privacyFriendlyAnalytics.enabled' param is true -->
+  <!-- We do not want tracking happening locally during tests -->
+  {{ if hugo.IsProduction }}
+    <noscript>
+      <!-- Page.Path return the relative path (exclude the baseurl, but since baseurl can be under its own relative path, we append the relativePath of the BaseURL first) -->
+      <img src="{{ .Site.Params.privacyFriendlyAnalytics.id }}?p={{ .Site.BaseURL | relURL | safeURL }}{{ .Page.Path | safeURL }}&t={{ .Page.Title }} ">
+    </noscript>
+  {{ end }}
+{{ end }}
