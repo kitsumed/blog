@@ -1,7 +1,7 @@
 ---
 title: 'Extraire les tokens TOTP de Microsoft Authenticator'
 date: '2025-12-20T14:00:00-00:00'
-tags: ["TOTP", "tutorial", "story", "Microsoft", "Android"]
+tags: ["TOTP", "tutorial", "story", "Microsoft", "Android", "adb"]
 comments: true
 description: "Parce que vous devriez pouvoir extraire vos propres données. Apprenez comment!"
 ---

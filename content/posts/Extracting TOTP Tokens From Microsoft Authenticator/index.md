@@ -1,7 +1,7 @@
 ---
 title: 'Extracting TOTP Tokens From Microsoft Authenticator'
 date: '2025-12-20T14:00:00-00:00'
-tags: ["TOTP", "tutorial", "story", "Microsoft", "Android"]
+tags: ["TOTP", "tutorial", "story", "Microsoft", "Android", "adb"]
 comments: true # To show/hide comments
 description: "Because you should be able to extract your own data. Learn how!" # Show Post Description under Title
 ---
