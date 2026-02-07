@@ -47,7 +47,8 @@ Ces explications sont basées sur le [fork le plus populaire de Shizuku créée 
 
 3. Shizuku active le **débogage USB** sur votre appareil, ce qui réduit sa sécurité, principalement au niveau physique, que l'appareil soit verrouillé ou non. Il existe des CVE et des exploits zero-day, et l'activation d'ADB augmente le risque d'exploitation.
     - **Remarque** : pour qu'une connexion ADB reste active, le **débogage USB** doit rester activé, quelle que soit la manière dont la connexion a été établie.
-    - Au moment où j'ai testé l'application, Shizuku ne désactivait pas le **débogage USB** une fois la connexion ADB est fermée. J'ai créé un ticket à ce sujet [ici](https://github.com/thedjchi/Shizuku/issues/110). Ticket qui recommande que Shizuku devrait activer le **débogage USB** lorsque nécessaire et le désactiver lorsqu'il ne l'est plus.
+    - Au moment où j'ai testé l'application, Shizuku ne désactivait pas le **débogage USB** une fois la connexion ADB est fermée. J'ai créé un ticket à ce sujet [ici](https://github.com/thedjchi/Shizuku/issues/110). Ticket qui recommande que Shizuku devrait activer le **débogage USB** lorsque nécessaire et le désactiver lorsqu'il ne l'est plus. Bien qu’ancienne et déjà corrigée, [le débogage USB comportait il y a longtemps des failles permettant de contourner l'invite de sécurité sur l'écran de verrouillage](https://labs.withsecure.com/advisories/android-4-4-2-secure-usb-debugging-bypass).
+
 
 ## Fonctionnalités : implications en matière de sécurité
 Après avoir créé un ticket dans le dépôt, une description plus concise et plus détaillée des fonctionnalités a été ajoutée au [wiki](https://github.com/thedjchi/Shizuku/wiki#features). Je ne vais pas expliquer toutes les fonctionnalités, mais certaines méritent d'être mentionnées d'un point de vue sécurité. Depuis la création de cet post, d'autres fonctionnalités ayant des implications en matière de sécurité ont peut-être été ajoutées.

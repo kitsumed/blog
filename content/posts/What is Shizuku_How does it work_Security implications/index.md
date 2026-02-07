@@ -47,7 +47,7 @@ These explanations are based on the most popular [fork of Shizuku made by thedjc
 
 3. Shizuku enables **USB Debugging** on your device, which reduces its security, mostly on a physical level, regardless of whether the device is locked or not. CVEs and zero-day exploits exist, and having ADB enabled increases the risk of exploitation.
     - **Note**: For a on-going ADB connection to stay alive, **USB Debugging** must remain enabled, regardless of how the connection was initiated.
-    - As of the time of review, Shizuku does not disable **USB Debugging** once its ADB connection is closed. I have created an issue about this [here](https://github.com/thedjchi/Shizuku/issues/110). The suggestion is that Shizuku should enable **USB Debugging** when needed and turn it off when it is not.
+    - As of the time of review, Shizuku does not disable **USB Debugging** once its ADB connection is closed. I have created an issue about this [here](https://github.com/thedjchi/Shizuku/issues/110). The suggestion is that Shizuku should enable **USB Debugging** when needed and turn it off when it is not. While old and already fixed, [USB Debugging already had exploits that allowed bypassing its security prompt on the lockscreen](https://labs.withsecure.com/advisories/android-4-4-2-secure-usb-debugging-bypass).
 
 ## Features: Security Implications
 After creating an issue in the repo, a shorter, more detailed description of the features was added to the [wiki](https://github.com/thedjchi/Shizuku/wiki#features). I won't be explaning all of the features, but a few are worth mentioning from a security perspective. Since the time of writing this, more feature with security implications may also exist.
