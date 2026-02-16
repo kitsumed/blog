@@ -1,7 +1,12 @@
 <details class="comments" id="data-comments">
 	<summary aria-label="Toggle to show or hide comments." id="legend-comments">Show Comments</summary>
 	<p class="comments-notice">
-		<noscript><b>JavaScript is required to load comments. The JavaScript widget is loaded ONLY when you press the button. </b></noscript>
+		<noscript>
+			<div class="comments-gif-container">
+				<img src="{{ "media/blinkiesDotCafe-NoJavascript.gif" | relURL }}" loading="lazy" alt="No Javascript Blinkies!" class="comments-centered-gif">
+			</div>
+			<b>JavaScript is required to load comments. The JavaScript widget is loaded ONLY when you press the button.</b>
+		</noscript>
 		This blog uses <a href="https://github.com/giscus/giscus" target="_blank" rel="noopener noreferrer">Giscus</a> to manage comments via GitHub Discussions. (<a href="https://github.com/giscus/giscus/blob/main/PRIVACY-POLICY.md" target="_blank" rel="noopener noreferrer">Privacy Policy here</a>).
 		If you do not want to allow a third-party app to comments, you can also leave comments directly on GitHub by visiting the 
 		<a href="https://github.com/kitsumed/blog/discussions?discussions_q={{ .Page.RelPermalink }}" target="_blank" rel="noopener noreferrer">Blog Comments section</a>.
