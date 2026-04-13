@@ -10,6 +10,11 @@ hidemeta: false # Hide meta elements : date, read-time, author and available-tra
 This is the story of how I tried recreating a "glitched" WebM file I came across a couple of years ago.
 This post is a revised version of my own old [Github Gist](https://gist.github.com/kitsumed/20fa8410514e560400c0c02ecf8c3b46).
 
+This video will be different between Firefox/VLC/Chromium devices and Android devices:
+{{< rawhtml >}}
+<video src="output.webm" controls></video>
+{{< /rawhtml >}}
+
 ---
 
 I recently encountered an intriguing WebM file that played different videos depending on the device or software used. Specifically, the video varied between Firefox, Chromium-based browsers/Electron apps, and Android.
