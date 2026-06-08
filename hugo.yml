@@ -129,6 +129,9 @@ params:
       url: "https://www.nuget.org/profiles/kitsumed"
     - name: rss # Shows an RSS feed icon on your site`
       url: "index.xml" # Your RSS feed url path
+    - name: githubsponsor
+      url: "https://github.com/sponsors/kitsumed"
+
 
   cover:
     hidden: false # hide everywhere but not in structured data
