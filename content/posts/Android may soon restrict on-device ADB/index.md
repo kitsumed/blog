@@ -129,3 +129,18 @@ To conclude, I would like to mention my conclusion in [What Is Shizuku? How Does
 > Here's my closing thought: **I can't wait to see how they'll justify disabling loopback ADB** over TCP/IP connections on non-emulator devices and start requiring a Google account...
 
 Well I guess they may indeed disable loopback ADB. Huh... I was almost 100% right on that one I guess. If you are a technical user, I invite you to give your feedback inside the issue [here](https://issuetracker.google.com/issues/526109803). Please don't forget the [early warning](#early-warning).
+
+# 2026-07-26 UPDATE
+Hi, quick? update:
+
+As this is gaining traction, I've seen a few users mention that bad actors could automate some actions once the user is tricked into giving the accessibility permissions.
+
+This is true today for sideloading (not for apps on the Play Store due to Google rules and restrictions). **However, the proposed solution would also address this issue**. So if Google comes out and uses this as a justification, it's in my own eyes most likely just an excuse rather than a real limitation that "force them" to do it.
+
+They could still restrict this behavior by default, as proposed in my blog post, while allowing developers to disable **that restriction using a second computer**, at this point, it becomes assumed risk that you connected via ADB via USB, ran the commands, and disabled the restriction. There is no more "accessibility permit exploitation" as it would by default by blocked.
+
+I also still believe, as I mentioned previously, that **there needs to be a reasonable balance between functionality and security**. Just because a user ***could*** grant a malicious app the ability to do something harmful doesn't mean we should block the functionality entirely.
+
+If we follow that logic, no one should be allowed to choose their own keyboard app because it could be a keylogger. Accessibility services would be too dangerous for us because they can view and interact with the screen. VPN apps could intercept or monitor all network traffic. Device Administrator capabilities could be abused to lock a user out of their device or make an app difficult to remove. Apps with the "Draw over other apps" permission could be abused for tapjacking or phishing attacks by displaying deceptive overlays. **The same reasoning could be applied to many other powerful Android permissions and capabilities**. At some point, there needs to be a balance between mitigating risks and preserving legitimate functionality.
+
+Granting accessibility permissions is already a significant hurdle (8 to 12+ steps), and **every security prompt shown during the process is very explicit that doing so is dangerous**. If someone chooses to proceed **despite multiple clear warnings explaining the risks**, even if they are beeing scammed, they likely would have fallen to many other types of scams. Justifying a complete lockdown is, in my opinion, not appropriate when there are alternative solutions (as mentioned in the blog) that effectively address the same concerns while not implementing breaking changes.
