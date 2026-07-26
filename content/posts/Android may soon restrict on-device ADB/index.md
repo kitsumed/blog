@@ -137,7 +137,7 @@ As this is gaining traction, I've seen a few users mention that bad actors could
 
 This is true today for sideloading (not for apps on the Play Store due to Google rules and restrictions). **However, the proposed solution would also address this issue**. So if Google comes out and uses this as a justification, it's in my own eyes most likely just an excuse rather than a real limitation that "force them" to do it.
 
-They could still restrict this behavior by default, as proposed in my blog post, while allowing developers to disable **that restriction using a second computer**, at this point, it becomes assumed risk that you connected via ADB via USB, ran the commands, and disabled the restriction. There is no more "accessibility permit exploitation" as it would by default by blocked.
+They could still restrict this behavior by default, as proposed in my blog post, while allowing developers to disable **that restriction using a second computer**, at this point, it becomes assumed risk that you connected via ADB via USB, ran the commands, and disabled the restriction. There is no more "accessibility permit exploitation" as it would by default be blocked.
 
 I also still believe, as I mentioned previously, that **there needs to be a reasonable balance between functionality and security**. Just because a user ***could*** grant a malicious app the ability to do something harmful doesn't mean we should block the functionality entirely.
 
